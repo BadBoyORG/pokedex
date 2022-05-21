@@ -6,8 +6,8 @@ export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<LandingPage />} />
-        <Route path='/1' element={<Error404 />} />
+        <Route path='/pokedex' element={<LandingPage />} />
+        <Route path='/error' element={<Error404 />} />
       </Routes>
     </BrowserRouter>
   )
