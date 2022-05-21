@@ -13,6 +13,7 @@ export const Card = styled.article`
   padding: 0;
   overflow-y: hidden;
   overflow-x: visible;
+  box-shadow: 5px 5px 6px hsla(0, 0%, 0%, 0.15);
 `;
 
 export const ImageCard = styled.div<{ type?: TypeNames }>`

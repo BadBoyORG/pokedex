@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   height: 5.8rem;
   z-index: 1000;
   background-color: ${({theme}) => theme.colors.third};
@@ -30,4 +30,8 @@ export const LinkLi = styled.a`
   font-weight: 700;
   font-family: ${({theme}) => theme.fonts.family.karla};
   color: ${({theme}) => theme.colors.dark};
+`;
+
+export const Logo = styled.img`
+  width: 10rem;
 `;

@@ -1,4 +1,5 @@
-import * as S from './styles'
+import Pikachu from '../../img/banner.png';
+import * as S from './styles';
 
 export const Home = () => {
   return (
@@ -8,6 +9,7 @@ export const Home = () => {
         <S.Paragraph>You can know the type of Pokemon, its strengths, disadvantages and abilities</S.Paragraph>
         <S.Button>See pokemons</S.Button>
       </S.ContainerColumn>
+      <S.PikachuImg src={Pikachu} alt="Pikachu" />
     </S.Container>
   )
 }

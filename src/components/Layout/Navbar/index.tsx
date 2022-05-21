@@ -1,9 +1,10 @@
+import Logo from '../../../img/logo.svg'
 import * as S from './styles';
 
 export const Navbar = () => {
   return (
     <S.Container>
-      <img alt="logo" />
+      <S.Logo src={Logo} alt="logo" />
       <S.LinksUl>
         <S.LinkLi href="/home">
           Home  

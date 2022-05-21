@@ -6,6 +6,7 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: row;
+  padding: 10rem 0 5rem 9rem;
   align-items: center;
   justify-content: space-between;
 `;
@@ -13,15 +14,17 @@ export const Container = styled.div`
 export const ContainerColumn = styled.div`
   display: flex;
   flex-direction: column;
+  margin-right: 12.5rem;
 `;
 
 export const Title = styled.h1`
   font-size: ${({theme}) => theme.fonts.sizes.h1};
   font-weight: 400;
   font-family: ${({theme}) => theme.fonts.family.karla};
-  line-height: 5.27rem;
+  line-height: 5rem;
   letter-spacing: 4px;
   color: ${({theme}) => theme.colors.dark};
+  margin-bottom: 2.5rem;
 
   span {
     font-weight: 700;
@@ -29,11 +32,12 @@ export const Title = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-  font-size: ${({theme}) => theme.fonts.sizes.h3};
+  font-size: ${({theme}) => theme.fonts.sizes.p2};
   font-weight: 400;
   font-family: ${({theme}) => theme.fonts.family.karla};
   line-height: 37.41px;
   color: ${({theme}) => theme.colors.dark};
+  margin-bottom: 2.5rem;
 `;
 
 export const Button = styled.button`
@@ -50,4 +54,17 @@ export const Button = styled.button`
   background-color: hsla(122, 54%, 64%, 1);
   box-shadow: 0px -9px 0px 0px hsla(0, 0%, 0%, 0.18) inset;
   border-radius: 11px;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.05);
+  }
+
+  &:active {
+    filter: brightness(0.95);
+  }
+`;
+
+export const PikachuImg = styled.img`
+  width: 40rem;
 `;
