@@ -5,6 +5,7 @@ export const Container = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  height: 5.8rem;
   z-index: 1000;
   background-color: ${({theme}) => theme.colors.third};
   display: flex;

@@ -3,9 +3,9 @@ import * as S from './styles';
 export const Navbar = () => {
   return (
     <S.Container>
-      <img src="" alt="logo" />
+      <img alt="logo" />
       <S.LinksUl>
-        <S.LinkLi href="/">
+        <S.LinkLi href="/home">
           Home  
         </S.LinkLi>
         <S.LinkLi href="/pokedex">
