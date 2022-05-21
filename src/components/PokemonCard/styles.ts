@@ -40,7 +40,7 @@ export const ImageCard = styled.div<{ type?: TypeNames }>`
 
     return theme.colors.grey
   }};
-  width: 14.52rem;
+  width: 100%;
   height: 100%;
   display: flex;
   border-radius: 0 8px 8px 0;
@@ -146,5 +146,5 @@ export const Types = styled.div<{ type?: TypeNames }>`
   align-items: flex-start;
   justify-content: center;
   border-radius: 15px;
-  border-bottom: 3px solid hsla(0, 0%, 0%, 0.18);
+  box-shadow: 0px -2px 0px 0px hsla(0, 0%, 0%, 0.18) inset;
 `;
