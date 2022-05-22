@@ -78,7 +78,7 @@ export const ContainerSmallScreen = styled.div`
 
 export const IconMenu = styled.i`
   color: ${({theme}) => theme.colors.dark};
-  font-size: 4rem;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,9 +90,9 @@ export const OverlaySmallScreen = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 65vh;
+  height: 55vh;
   background: linear-gradient(180deg, ${({theme}) => theme.colors.third} 0%, ${({theme}) => theme.colors.primary} 100%);
-  transition: .5s ease;
+  transition: 0.5s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,12 +102,12 @@ export const OverlaySmallScreen = styled.div`
 `;
 
 export const IconClose = styled.i`
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: ${({theme}) => theme.colors.dark};
   cursor: pointer;
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1rem;
+  right: 1rem;
 `;
 
 export const LinksUlSmallScreen = styled.ul`
@@ -115,13 +115,13 @@ export const LinksUlSmallScreen = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 `;
 
 export const LinkLiSmallScreen = styled.a`
   text-decoration: none;
   text-align: center;
-  font-size: ${({theme}) => theme.fonts.sizes.h3};
+  font-size: ${({theme}) => theme.fonts.sizes.h4};
   font-weight: 700;
   font-family: ${({theme}) => theme.fonts.family.karla};
   color: ${({theme}) => theme.colors.dark};
@@ -134,6 +134,6 @@ export const LinkLiSmallScreen = styled.a`
 `;
 
 export const LogoSmallScreen = styled.img`
-  width: 15rem;
-  margin-bottom: 3rem;
+  width: 10rem;
+  margin-bottom: 2.5rem;
 `;
