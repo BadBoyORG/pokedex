@@ -15,8 +15,16 @@ export const Container = styled.div`
   padding: 1.25rem 8.75rem;
   box-shadow: 0px 4px 16px 0px hsla(214, 97%, 13%, 0.2);
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 2000px) {
+    padding: 1.25rem 12rem;
+  }
+
+  @media screen and (min-width: 750px) and (max-width: 1150px) {
     padding: 1.25rem 2.375rem;
+  }
+
+  @media screen and (max-width: 749px) {
+    padding: 1.375rem 1.675rem 0.6rem 1.675rem;
   }
 `;
 
@@ -26,6 +34,14 @@ export const LinksUl = styled.ul`
   justify-content: center;
   align-items: center;
   gap: 3.45rem;
+
+  @media screen and (min-width: 750px) and (max-width: 1150px) {
+    gap: 2rem;
+  }
+
+  @media screen and (min-width: 2000px) {
+    gap: 10rem;
+  }
 `;
 
 export const LinkLi = styled.a`
@@ -35,7 +51,15 @@ export const LinkLi = styled.a`
   font-family: ${({theme}) => theme.fonts.family.karla};
   color: ${({theme}) => theme.colors.dark};
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 750px) and (max-width: 1150px) {
+    font-size: ${({theme}) => theme.fonts.sizes.h5};
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: ${({theme}) => theme.fonts.sizes.h3};
+  }
+
+  @media screen and (max-width: 750px) {
     display: none;
   }
 `;
@@ -47,7 +71,7 @@ export const Logo = styled.img`
 export const ContainerSmallScreen = styled.div`
   display: none;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 750px) {
     display: flex;
   }
 `;
