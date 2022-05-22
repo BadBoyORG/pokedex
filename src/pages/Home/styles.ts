@@ -12,11 +12,19 @@ export const Container = styled.div`
   justify-content: space-between;
 
   //desktop responsive
+  @media screen and (max-width: 1050px) {
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
   @media screen and (max-width: 1160px) {
     padding: 0 0 0 3rem;
   }
 
-  @media screen and (max-width: 1350px) {
+  @media screen and (max-width: 1350px) and (min-width: 1170px) {
     padding: 0 0 0 6rem;
   }
 
@@ -31,15 +39,17 @@ export const ContainerColumn = styled.div`
   margin-right: 10rem;
 
   //desktop responsive
+  @media screen and (max-width: 1050px) {
+    align-items: center;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
   @media screen and (max-width: 1350px) {
     margin-right: 5rem;
   }
 
   @media screen and (min-width: 1850px) {
-    margin-right: 20rem;
-  }
-
-  @media screen and (min-width: 2000px) {
     margin-right: 20rem;
   }
 
@@ -103,7 +113,7 @@ export const Button = styled.button`
   font-family: ${({theme}) => theme.fonts.family.karla};
   line-height: 23px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   height: 4.125rem;
   width: 14.45rem;
@@ -126,6 +136,10 @@ export const PikachuImg = styled.img`
   width: 40rem;
 
   //desktop responsive
+  @media screen and (max-width: 1050px) {
+    display: none;
+  }
+
   @media screen and (max-width: 1160px) {
     width: 35rem;
   }
@@ -133,12 +147,27 @@ export const PikachuImg = styled.img`
   @media screen and (min-width: 1850px) {
     width: 120rem;
   }
+`;
 
-  @media screen and (min-width: 2000px) {
-    width: 120rem;
+export const PikachuImgComplet = styled.img`
+  display: none;
+  width: 50rem;
+
+  //tablet responsive
+  @media screen and (max-width: 580px) {
+    display: flex;
+    width: 30rem;
   }
 
-  @media screen and (min-width: 2560px) {
-    width: 120rem;
+  @media screen and (max-width: 780px) and (min-width: 581px) {
+    display: flex;
+    width: 40rem;
+  }
+
+  //desktop responsive
+  @media screen and (max-width: 1050px) {
+    display: flex;
+    position: relative;
+    bottom: -3rem;
   }
 `;
