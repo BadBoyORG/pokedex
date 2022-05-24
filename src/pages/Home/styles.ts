@@ -13,22 +13,25 @@ export const Container = styled.div`
 
   //desktop responsive
   @media screen and (max-width: 1050px) {
-    padding: 0;
+    height: 100%;
+    padding: 5rem 0;
+    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-right: 0;
   }
 
-  @media screen and (max-width: 1160px) {
+  @media screen and (max-width: 1160px) and (min-width: 1051px) {
     padding: 0 0 0 3rem;
   }
 
-  @media screen and (max-width: 1350px) and (min-width: 1170px) {
+  @media screen and (max-width: 1350px) and (min-width: 1161px) {
     padding: 0 0 0 6rem;
   }
 
-  @media screen and (min-width: 2000px) {
+  @media screen and (min-width: 2000px) and (min-width: 1351px) {
     padding: 10rem 0 5rem 12rem;
   }
 `;
@@ -38,22 +41,30 @@ export const ContainerColumn = styled.div`
   flex-direction: column;
   margin-right: 10rem;
 
-  //desktop responsive
-  @media screen and (max-width: 1050px) {
+  //mobile responsive
+  @media screen and (max-width: 560px) {
+    margin-right: 2rem;
+    margin-left: 2rem;
     align-items: center;
-    margin-top: 0;
-    margin-right: 0;
   }
 
-  @media screen and (max-width: 1350px) {
+  //desktop responsive
+  @media screen and (max-width: 1050px) and (min-width: 561px) {
+    align-items: center;
+    margin-top: 0;
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
+  @media screen and (max-width: 1350px) and (min-width: 1051px) {
     margin-right: 5rem;
   }
 
-  @media screen and (min-width: 1850px) {
+  @media screen and (min-width: 1850px) and (max-width: 1351px) {
     margin-right: 20rem;
   }
 
-  @media screen and (min-width: 2560px) {
+  @media screen and (min-width: 2560px) and (min-width: 1851px) {
     margin-right: 30rem;
   }
 `;
@@ -69,6 +80,13 @@ export const Title = styled.h1`
 
   span {
     font-weight: 700;
+  }
+
+  //mobile responsive
+  @media screen and (max-width: 560px) {
+    font-size: ${({theme}) => theme.fonts.sizes.h3};
+    line-height: 3rem;
+    margin-bottom: 1rem;
   }
 
   //desktop responsive
@@ -93,6 +111,11 @@ export const Paragraph = styled.p`
   color: ${({theme}) => theme.colors.dark};
   margin-bottom: 2.5rem;
 
+  //mobile responsive
+  @media screen and (max-width: 560px) {
+    font-size: ${({theme}) => theme.fonts.sizes.h4};
+  }
+
   //desktop responsive
   @media screen and (min-width: 1850px) {
     margin-bottom: 2.8rem;
@@ -113,7 +136,7 @@ export const Button = styled.button`
   font-family: ${({theme}) => theme.fonts.family.karla};
   line-height: 23px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: 4.125rem;
   width: 14.45rem;
@@ -129,6 +152,11 @@ export const Button = styled.button`
 
   &:active {
     filter: brightness(0.95);
+  }
+
+  //mobile responsive
+  @media screen and (max-width: 560px) {
+    width: 100%;
   }
 `;
 
@@ -153,19 +181,36 @@ export const PikachuImgComplet = styled.img`
   display: none;
   width: 50rem;
 
+  //mobile responsive
+  @media screen and (max-width: 380px) {
+    display: flex;
+    width: 20rem;
+    position: relative;  
+    bottom: -2rem;
+  }
+
+  @media screen and (max-width: 480px) and (min-width: 381px) {
+    display: flex;
+    width: 25rem;
+    position: relative;  
+    bottom: -2rem;
+  }
+
   //tablet responsive
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 580px) and (min-width: 481px) {
     display: flex;
     width: 30rem;
+    position: relative;  
+    bottom: -2rem;
   }
 
   @media screen and (max-width: 780px) and (min-width: 581px) {
     display: flex;
-    width: 40rem;
+    width: 35rem;
   }
 
   //desktop responsive
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1050px) and (min-width: 581px){
     display: flex;
     position: relative;
     bottom: -3rem;

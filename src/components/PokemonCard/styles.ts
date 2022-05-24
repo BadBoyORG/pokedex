@@ -30,11 +30,11 @@ export const ImageCard = styled.div<{ type?: TypeNames }>`
     if (type === "rock") return theme.colors.grey
     if (type === "ground") return theme.colors.brown
     if (type === "ghost") return theme.colors.purple
-    if (type === "psychic") return theme.colors.purple
+    if (type === "psychic") return theme.colors.pink
     if (type === "fairy") return theme.colors.purple
     if (type === "poison") return theme.colors.purple
     if (type === "fighting") return theme.colors.orange
-    if (type === "flying") return theme.colors.blue
+    if (type === "flying") return theme.colors.pink
     if (type === "steel") return theme.colors.grey
     if (type === "shadow") return theme.colors.blue 
     if (type === "unknown") return theme.colors.grey
@@ -127,10 +127,10 @@ export const Types = styled.div<{ type?: TypeNames }>`
     if (type === "ground") return theme.colors.brown
     if (type === "ghost") return theme.colors.purple
     if (type === "psychic") return theme.colors.purple
-    if (type === "fairy") return theme.colors.purple
+    if (type === "fairy") return theme.colors.pink
     if (type === "poison") return theme.colors.purple
     if (type === "fighting") return theme.colors.orange
-    if (type === "flying") return theme.colors.blue
+    if (type === "flying") return theme.colors.pink
     if (type === "steel") return theme.colors.grey
     if (type === "shadow") return theme.colors.blue 
     if (type === "unknown") return theme.colors.grey
@@ -148,4 +148,10 @@ export const Types = styled.div<{ type?: TypeNames }>`
   justify-content: center;
   border-radius: 15px;
   box-shadow: 0px -2px 0px 0px hsla(0, 0%, 0%, 0.18) inset;
+`;
+
+export const CardTypes = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: .8rem;
 `;
