@@ -27,7 +27,8 @@ export const theme = {
       h5: "1.125rem",
       h6: "0.75rem",
       p: "1rem",
-      p2: "2rem"
+      p2: "2rem",
+      p3: "3rem"
     },
     family: {
       karla: "'Karla', sans-serif",

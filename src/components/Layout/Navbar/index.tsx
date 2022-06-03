@@ -42,7 +42,7 @@ export const Navbar = () => {
                 Legendaries
               </S.LinkLiSmallScreen>
               <S.LinkLiSmallScreen href="/error">
-               Documentation
+                Documentation
               </S.LinkLiSmallScreen>
             </S.LinksUlSmallScreen>
           </S.OverlaySmallScreen>

@@ -16,6 +16,7 @@ export const PokemonCard: React.FC<PokemonCardProps> = ({ name }) => {
     <S.Card >
       <S.InfoCard>
         <S.Paragraph>{pokemon?.name}</S.Paragraph>
+
         <S.CardStatusRow>
           <S.CardStatusColumn>
             <S.NumberStatus>{pokemon?.stats[1].base_stat}</S.NumberStatus>
@@ -26,14 +27,16 @@ export const PokemonCard: React.FC<PokemonCardProps> = ({ name }) => {
             <S.ParagraphStatus>{pokemon?.stats[2].stat.name}</S.ParagraphStatus>
           </S.CardStatusColumn>         
         </S.CardStatusRow>
+
         <S.CardTypes>
           {
-           pokemon?.types.map(type => (
-             <S.Types type={type.type.name}>{type.type.name}</S.Types>
+           pokemon?.types.map((type, key) => (
+             <S.Types key={key} type={type.type.name}>{type.type.name}</S.Types>
            ))
           }
         </S.CardTypes>
       </S.InfoCard>
+
       <S.ImageCard type={pokemon?.types[0].type.name}>
         <S.Image src={pokemon?.sprites.other['official-artwork'].front_default} />
       </S.ImageCard>

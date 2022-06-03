@@ -50,6 +50,12 @@ export const LinkLi = styled.a`
   font-weight: 700;
   font-family: ${({theme}) => theme.fonts.family.karla};
   color: ${({theme}) => theme.colors.dark};
+  transition: 0.2s ease;
+
+  &:hover {
+    color: ${({theme}) => theme.colors.white};
+    text-shadow: 2px 2px ${({theme}) => theme.colors.dark};
+  }
 
   @media screen and (min-width: 750px) and (max-width: 1150px) {
     font-size: ${({theme}) => theme.fonts.sizes.h5};
