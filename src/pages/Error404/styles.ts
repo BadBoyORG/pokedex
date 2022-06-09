@@ -16,8 +16,21 @@ export const ErrorTeamRocket = styled.img`
   width: 50rem;
   margin: 0;
 
+  //mobile responsive
+  @media screen and (max-width: 320px) {
+    width: 18rem;
+  }
+
+  @media screen and (max-width: 380px) and (min-width: 321px) {
+    width: 20rem;
+  }
+
+  @media screen and (max-width: 450px) and (min-width: 381px) {
+    width: 25rem;
+  }
+
   //tablet responsive
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) and (min-width: 451px) {
     width: 30rem;
   }
 
@@ -50,8 +63,24 @@ export const Title = styled.h1`
     color: ${({theme}) => theme.colors.white};
   }
 
+  //mobile responsive
+  @media screen and (max-width: 320px) {
+    padding: 0 3rem;
+    font-size: ${({theme}) => theme.fonts.sizes.h4};
+  }
+
+  @media screen and (max-width: 380px) and (min-width: 321px) {
+    padding: 0 5rem;
+    font-size: ${({theme}) => theme.fonts.sizes.h4};
+  }
+
+  @media screen and (max-width: 450px) and (min-width: 381px) {
+    padding: 0 6.5rem;
+    font-size: ${({theme}) => theme.fonts.sizes.h4};
+  }
+
   //tablet responsive
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) and (min-width: 451px) {
     padding: 0 4rem;
   }
 
