@@ -16,8 +16,13 @@ export const ErrorTeamRocket = styled.img`
   width: 50rem;
   margin: 0;
 
+  //tablet responsive
+  @media screen and (max-width: 600px) {
+    width: 30rem;
+  }
+
   //desktop responsive
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1500px) and (min-width: 601px) {
     width: 40rem;
   }
 
@@ -39,9 +44,19 @@ export const Title = styled.h1`
   font-size: ${({theme}) => theme.fonts.sizes.p3};
   font-weight: 700;
   font-family: ${({theme}) => theme.fonts.family.karla};
+  text-align: center;
 
   span {
     color: ${({theme}) => theme.colors.white};
+  }
+
+  //tablet responsive
+  @media screen and (max-width: 600px) {
+    padding: 0 4rem;
+  }
+
+  @media screen and (max-width: 800px) and (min-width: 601px) {
+    padding: 0 10rem;
   }
 `;
 
@@ -73,6 +88,11 @@ export const Button = styled.a`
   &:active {
     filter: brightness(0.95);
     color: ${({theme}) => theme.colors.grey};
+  }
+
+  //tablet responsive
+  @media screen and (max-width: 800px) {
+    margin-top: 2rem;
   }
 
   //desktop responsive
