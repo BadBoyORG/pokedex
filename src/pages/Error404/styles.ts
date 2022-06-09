@@ -15,6 +15,23 @@ export const Container = styled.div`
 export const ErrorTeamRocket = styled.img`
   width: 50rem;
   margin: 0;
+
+  //desktop responsive
+  @media screen and (max-width: 1500px) {
+    width: 40rem;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 60rem;
+  };
+
+  @media screen and (min-width: 2250px) {
+    width: 75rem;
+  };
+
+  @media screen and (min-width: 2500px) {
+    width: 90rem;
+  };
 `;
 
 export const Title = styled.h1`
@@ -57,4 +74,25 @@ export const Button = styled.a`
     filter: brightness(0.95);
     color: ${({theme}) => theme.colors.grey};
   }
+
+  //desktop responsive
+  @media screen and (min-width: 2000px) {
+    height: 3.625rem;
+    width: 19.45rem;
+    align-items: center;
+  };
+
+  @media screen and (min-width: 2250px) {
+    height: 4.125rem;
+    width: 24.45rem;
+    align-items: center;
+    font-size: ${({theme}) => theme.fonts.sizes.h4};
+  };
+
+  @media screen and (min-width: 2500px) {
+    height: 5.125rem;
+    width: 34.45rem;
+    align-items: center;
+    font-size: ${({theme}) => theme.fonts.sizes.p2};
+  };
 `;
